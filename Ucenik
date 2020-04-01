@@ -31,5 +31,28 @@ prosek=prosek1;
 else
 cout<<"Prosek mora biti izmedju 1 i 5!"<<endl;
 }
+};
+
+enum VrstaSkole {strucna, gimnazija, umetnicka};
+enum StepenSkole{trogodisnja, cetvorogodisnja};
+
+class Skola
+{
+private:
+VrstaSkole vrsta;
+StepenSkole stepen;
+
+public:
+Skola() {vrsta=gimnazija; stepen=cetvorogodisnja;}
+Skola(VrstaSkole vrs, StepenSkole stp) {vrsta=vrs; stepen=stp;}
+Skola(const Skola &sk) {vrsta=sk.vrsta; stepen=sk.stepen;}
+
+VrstaSkole getVrsta()const {return vrsta;}
+StepenSkole getStepen()const {return stepen;}
+
+void setVrsta(VrstaSkole v) {vrsta=v;}
+void setStepen(StepenSkole s) {stepen=s;}
+
+};
 
 
