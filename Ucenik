@@ -55,4 +55,14 @@ void setStepen(StepenSkole s) {stepen=s;}
 
 };
 
+enum Pozicija {kod_kuce, biblioteka, ucionica; trening}
+class Ucenik 
+{
+private:
+DjackaKnjizica djackaknjizica;
+Skola skola;
+int vestina;
+int znanje;
+int odmor;
+Pozicija pozicija;
 
