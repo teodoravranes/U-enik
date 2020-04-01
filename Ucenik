@@ -1,0 +1,35 @@
+#include <iostream>
+
+using namespace std;
+
+class DjackaKnjizica
+{
+private:
+int godina;
+double prosek;
+
+public:
+DjackaKnjizica() {godina=3; prosek=4.76;}
+DjackaKnjizica(int god, double pro) {godina=god; prosek=pro;}
+DjackaKnjizica(const DjackaKnjizica &knjizica) {godina=knjizica.godina; prosek=knjizica.prosek;}
+
+int getGodina()const {return godina;}
+double getProsek()const {return prosek;}
+
+void setGodina(int godina1)
+{
+if(godina1>=1 && godina1<=4)
+godina=godina1;
+else
+cout<<"Godina mora biti izmedju 1 i 4!"<<endl;
+}
+
+void setProsek(int prosek1)
+{
+if(prosek1>=1 && prosek1<=5)
+prosek=prosek1;
+else
+cout<<"Prosek mora biti izmedju 1 i 5!"<<endl;
+}
+
+
