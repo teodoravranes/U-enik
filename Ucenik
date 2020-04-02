@@ -111,4 +111,12 @@ pozicija = p;
     }
     }
     
-    
+    bool idiUUcionicu()
+    {
+    if(pozicija==biblioteka)
+    {
+    pozicija=ucionica;
+    return true;
+    }else{
+    return false;
+    }
