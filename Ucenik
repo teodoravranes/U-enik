@@ -158,3 +158,29 @@ pozicija = p;
     }
     }
     
+    bool poloziGodinu()
+    {
+    if(pozicija==ucionica && znanje>60)
+    {
+    
+    if(znanje<=70)
+    DjackaKnjizica.setProsek((DjackaKnjizica.getProsek+2)/2);
+    else if(znanje>70 && znanje<=80)
+    DjackaKnjizica.setProsek((DjackaKnjizica.getProsek+3)/2);
+    else if(znanje>80 && znanje<=90)
+    DjackaKnjizica.setProsek((DjackaKnjizica.getProsek+4)/2);
+    else if(znanje>90 && znanje<=100)
+    
+    DjackaKnjizica.setProsek((DjackaKnjizica.getProsek+5)/2);
+    DjackaKnjizica.setGodina(DjackaKnjizica.getGodina+1);
+    
+    return true;
+    }else{
+    return false;
+    }
+    }
+    
+    bool maturiraj()
+    {
+    if(pozicija==ucionica)
+    
