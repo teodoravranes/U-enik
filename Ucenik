@@ -183,4 +183,17 @@ pozicija = p;
     bool maturiraj()
     {
     if(pozicija==ucionica)
+    {
+    if((DjackaKnjizica.getGodina==3 && Skola.getStepen==trogodisnji) || (DjackaKnjizica.getGodina==4 && Skola.getStepen=cetvorogodisnji))
+    {
+    int broj=rand()%5+1;
+    if(broj>1)
+    return true;
+    }else{
+    return false;
+    }
+    }
+    }
+    
+    
     
