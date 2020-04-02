@@ -1,3 +1,4 @@
+#include <cstdlib>
 #include <iostream>
 
 using namespace std;
@@ -126,10 +127,23 @@ pozicija = p;
     if(pozicija==kod_kuce)
     {
     odmor+=satiSna*10;
-    if(odmor<100)
+    if(odmor<=100)
     return true;
     }else{
     return false;
     }
     }
+    
+    bool uci()
+    {
+    if(pozicija==biblioteka)
+    {
+    znanje+=rand()%10+1;
+    if(znanje<=100)
+    return true;
+    }else{
+    return false;
+    }
+    }
+    
     
