@@ -195,5 +195,23 @@ pozicija = p;
     }
     }
     
+    };
+    
+    int meni()
+    {
+    int op;
+    cout<<"Izaberite opciju:"<<endl;
+    cout<<"1.Idi kuci"<<endl;
+    cout<<"2.Idi u biblioteku"<<endl;
+    cout<<"3.Idi na trening"<<endl;
+    cout<<"4.Idi u ucionicu"<<endl;
+    cout<<"5.Spavaj"<<endl;
+    cout<<"6.Uci"<<endl;
+    cout<<"7.Treniraj"<<endl;
+    cout<<"8.Polozi godinu"<<endl;
+    cout<<"9.Maturiraj"<<endl;
+    cin>>op;
+    return op;
+    }
     
     
