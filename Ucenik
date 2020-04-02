@@ -146,4 +146,15 @@ pozicija = p;
     }
     }
     
+    bool treniraj()
+    {
+    if(pozicija==trening)
+    {
+    vestina+=rand()%10+1;
+    if(vestina<=100)
+    return true;
+    }else{
+    return false;
+    }
+    }
     
