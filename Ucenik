@@ -55,7 +55,7 @@ void setStepen(StepenSkole s) {stepen=s;}
 
 };
 
-enum Pozicija {kod_kuce, biblioteka, ucionica; trening}
+enum Pozicija {kod_kuce, biblioteka, ucionica, trening}
 class Ucenik 
 {
 private:
@@ -66,3 +66,16 @@ int znanje;
 int odmor;
 Pozicija pozicija;
 
+Ucenik(): DjackaKnjizica(), Skola(), vestina(79), znanje(84), odmor(33), Pozicija(trening){}
+Ucenik(int ves, int zn, int od, Pozicija p, VrstaSkole vv, StepenSkole ss, int gg, double pp): Skola(vv,ss), DjackaKnjizica(gg,pp)
+{
+        if((ves>=1 && ves<=100)&&(zn>=1 && zn<=100)&&(od>=1 && od<=100))
+        {
+            vestina = ves;
+            znanje = zn;
+            odmor = od;
+        }
+            pozicija = p;
+    }
+    
+    
