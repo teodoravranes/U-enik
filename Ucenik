@@ -100,4 +100,15 @@ pozicija = p;
     }
     }
     
+    bool idiNaTrening()
+    {
+    if(pozicija==kod_kuce && odmor>60)
+    {
+    pozicija=trening;
+    return true;
+    }else{
+    return false;
+    }
+    }
+    
     
