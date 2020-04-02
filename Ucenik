@@ -78,4 +78,12 @@ Ucenik(int ves, int zn, int od, Pozicija p, VrstaSkole vv, StepenSkole ss, int g
             pozicija = p;
     }
     
-    
+    bool idiKuci()
+    {
+        if(pozicija != kuca)
+        {
+            pozicija = kuca;
+            return true;
+        }else
+            return false;
+    }
