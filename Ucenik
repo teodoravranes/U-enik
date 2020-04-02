@@ -120,3 +120,16 @@ pozicija = p;
     }else{
     return false;
     }
+    
+    bool spavaj(int satiSna)
+    {
+    if(pozicija==kod_kuce)
+    {
+    odmor+=satiSna*10;
+    if(odmor<100)
+    return true;
+    }else{
+    return false;
+    }
+    }
+    
