@@ -214,4 +214,45 @@ pozicija = p;
     return op;
     }
     
+    int main()
+    {
+    Ucenik ucenik;
+    int opp;
+    bool b;
     
+    do{
+    opp=meni();
+    
+    switch(opp)
+    {
+    case 1:
+    b=u.idiKuci();
+    break;
+    case 2:
+    b=u.idiUBiblioteku;
+    break;
+    case 3:
+    b=u.idiNaTrening;
+    break;
+    case 4:
+    b=u.idiUUcionicu;
+    break;
+    case 5:
+    b=u.spavaj;
+    break;
+    case 6:
+    b=u.uci;
+    break;
+    case 7:
+    b=u.treniraj;
+    break;
+    case 8:
+    b=u.poloziGodinu;
+    break;
+    case 9:
+    b=u.maturiraj;
+    break;
+    }
+    }while(opp>=1 && opp<=9);
+    return 0;
+    }
